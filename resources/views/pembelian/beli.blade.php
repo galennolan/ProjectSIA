@@ -13,16 +13,16 @@
  @foreach($kas as $ks)
  <input type="hidden" name="akun" value="{{ $ks->no_akun }}" class="form-control" id="exampleFormControlInput1" >
  @endforeach
+ ini no akun
  @foreach($pembelian as $bli)
- <input type="hidden" name="pembelian" value="{{ $bli->no_akun }}" class="form-control" id="exampleFormControlInput1" >
+ <input type="hidden" name="pembelian2" value="{{ $bli->no_akun }}" class="form-control" id="exampleFormControlInput1" >
  @endforeach
- <input type="hidden" name="no_jurnal" value="{{ $formatj }}" class="form-control" id="exampleFormControlInput1" >
- <input type="text" name="no_faktur" value="{{ $format }}" readonly cl
-ass="form-control" id="exampleFormControlInput1" >
+ <input type="text" name="no_jurnal" value="{{ $formatj }}" class="form-control" id="exampleFormControlInput1" >
+ <input type="text" name="no_faktur" value="{{ $format }}" readonly class="form-control" id="exampleFormControlInput1" >
  </div>
  <div class="form-group col-sm-4">
  <label for="exampleFormControlInput1">Tanggal Pembelian</label>
- <input type="text" min="1" name="tgl" value="{{ date('Y-m-d') }}" readonly id="addnmbrg" class="formcontrol" id="exampleFormControlInput1" require >
+ <input type="text" min="1" name="tgl" value="{{ date('Y-m-d') }}" readonly id="addnmbrg" class="form-control" id="exampleFormControlInput1" require >
  </div>
  @foreach($pemesanan as $psn)
  <div class="form-group col-sm-4">

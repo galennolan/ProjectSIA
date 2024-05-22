@@ -68,7 +68,7 @@ Route::post('/setting/simpan', [App\Http\Controllers\SettingController::class, '
 
 // Pemesanan
 Route::get('/transaksi', [App\Http\Controllers\PemesananController::class, 'index'])->name('pemesanan.transaksi');
-Route::post('/transaksi/store', [App\Http\Controllers\PemesananController::class, 'store']);
+Route::post('/sem/store', [App\Http\Controllers\PemesananController::class, 'store']);
 Route::get('/transaksi/hapus/{kd_brg}', [App\Http\Controllers\PemesananController::class, 'destroy']);
 
 // Detail Pesan

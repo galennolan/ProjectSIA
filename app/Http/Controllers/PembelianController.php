@@ -87,7 +87,7 @@ class PembelianController extends Controller
         $tambah_jurnaldebet->no_jurnal = $request->no_jurnal;
         $tambah_jurnaldebet->keterangan = 'Pembelian Barang ';
         $tambah_jurnaldebet->tgl_jurnal = $request->tgl;
-        $tambah_jurnaldebet->no_akun = $request->pembelian;
+        $tambah_jurnaldebet->no_akun = $request->pembelian2;
         $tambah_jurnaldebet->debet = $request->total;
         $tambah_jurnaldebet->kredit = '0';
         $tambah_jurnaldebet->save();
